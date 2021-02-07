@@ -1,3 +1,3 @@
-import react from 'react';
+import react from "react";
 
-export default () =>  <span>Edit Profile</span>
+export default () => <span>Edit Profile</span>;
