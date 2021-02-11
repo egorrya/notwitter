@@ -14,7 +14,7 @@ const Navigation = ({ userObj }) => {
           </Link>
         </li>
         <li>
-          <h1 className="logo">Netwitter</h1>
+          <h1 className="logo">Anonymter</h1>
         </li>
         <li>
           <Link to="/profile" className="nav__user">

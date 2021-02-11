@@ -23,7 +23,7 @@ const Auth = () => {
     <>
       <div className="auth ">
         <header>
-          <h1 className="logo">Netwitter</h1>
+          <h1 className="logo">Anonymter</h1>
         </header>
         <AuthForm />
         <div className="auth__social">

@@ -1,0 +1,23 @@
+.profile {
+  @include clearfix;
+
+  max-width: $grid-width;
+
+  margin: 0 auto;
+
+  width: 100%;
+  // height: 90vh;
+  // justify-content: center;
+  display: flex;
+  // align-items: center;
+  flex-direction: column;
+
+  input {
+    width: 100% !important;
+    margin: 0 0 1rem !important;
+  }
+
+  button {
+    width: 100% !important;
+  }
+}

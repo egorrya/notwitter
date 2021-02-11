@@ -1,0 +1,45 @@
+.nweets {
+  margin-top: 2rem;
+
+  &__nweet {
+    position: relative;
+    width: 100%;
+    background: #222;
+    margin-bottom: 1rem;
+
+    border-radius: 20px;
+  }
+
+  &__text {
+    padding: 2rem 8rem 2rem 2rem;
+    display: block;
+    max-width: 100%;
+    word-wrap: break-word;
+  }
+
+  &__img {
+    max-width: 100%;
+    margin-bottom: -5px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+
+  &__delete,
+  &__edit {
+    position: absolute;
+    top: 2rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+  }
+
+  &__delete {
+    right: 2rem;
+
+    box-shadow: 0 0px 15px 0 rgba(206, 94, 94, 0.3);
+  }
+
+  &__edit {
+    position: absolute;
+    right: 4.5rem;
+  }
+}

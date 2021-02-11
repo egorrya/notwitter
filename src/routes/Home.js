@@ -1,6 +1,6 @@
 import react, { useState, useEffect } from "react";
 import Nweet from "../components/Nweet";
-import { dbService, storageService } from "../firebase";
+import { dbService } from "../firebase";
 import NweetFactory from "../components/NweetFactory";
 
 const Home = ({ userObj }) => {
@@ -22,7 +22,7 @@ const Home = ({ userObj }) => {
   return (
     <div className="home">
       <NweetFactory userObj={userObj} />
-      <div>
+      <div className="nweets">
         {nweets.map((nweet) => (
           <Nweet
             key={nweet.id}

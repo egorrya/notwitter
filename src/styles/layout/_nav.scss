@@ -1,5 +1,6 @@
 .nav {
   max-width: $grid-width;
+  z-index: 9999;
 
   background: #222;
   width: 100%;
@@ -20,6 +21,7 @@
     li {
       display: inline-block;
       list-style: none;
+      width: 33.333%;
 
       a {
         position: relative;
@@ -41,6 +43,8 @@
   }
 
   &__user {
+    float: right;
+
     span {
       padding-right: 40px;
     }

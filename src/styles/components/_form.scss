@@ -6,7 +6,7 @@
       width: 100%;
     }
 
-    width: 48%;
+    width: 49%;
     padding: 1rem 2rem;
     border: 0;
 
@@ -43,5 +43,122 @@
     }
 
     margin: 0 2% 0 0;
+  }
+}
+
+.form__editing {
+  padding: 2rem;
+}
+
+.form__editing input:nth-child(2n + 1) {
+  margin: 0 0 1.5rem 0 !important;
+}
+
+.form__editing .button:nth-child(2n + 1) {
+  margin: 0 0 0 2% !important;
+}
+
+.file-input label {
+  @include respond(mobile) {
+    margin: 1rem 0;
+  }
+
+  margin: 0 2% 0 0;
+}
+
+.file-input label {
+  @include respond(mobile) {
+    width: 100%;
+  }
+
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  line-height: 1.4rem;
+  border-radius: 50px;
+  border: 0;
+  background: #000;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  background-size: 300% 100%;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(to right, #fff, #ccc, #fff);
+  color: $color-black;
+  box-shadow: 0 4px 15px 0 rgba(#fff, 0.6);
+
+  &:hover {
+    background-position: 100% 0;
+
+    transition: all 0.4s ease-in-out;
+  }
+}
+
+.file-input {
+  width: 50%;
+  margin: 0;
+  display: inline-block;
+}
+
+.file-input label {
+  margin-top: 1rem;
+  width: 96%;
+  font-size: 1.2rem;
+}
+
+.file {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+.fa-image {
+  margin-right: 1rem;
+}
+
+.form__attachment {
+  position: relative;
+
+  img {
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    max-width: 15rem;
+    border-radius: 20px;
+
+    box-shadow: 0 4px 15px 0 rgba(#fff, 0.2);
+  }
+
+  button {
+    cursor: pointer;
+    position: absolute;
+    display: inline-block;
+    top: 30%;
+    margin-left: 2rem;
+    min-width: 100px;
+    margin-top: 0;
+    border: 0;
+    outline: none;
+    border-radius: 50px;
+    background-color: #fff;
+    padding: 1rem;
+    color: #000000;
+    font-size: 14px;
+    z-index: 1;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: $color-black;
+    box-shadow: 0 4px 15px 0 rgba(#fff, 0.6);
+    background-image: linear-gradient(to right, #fff, #ccc, #fff);
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+
+    .fa-times {
+      float: left;
+      margin-left: 0.5rem;
+    }
   }
 }
