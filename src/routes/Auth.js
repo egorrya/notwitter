@@ -20,17 +20,23 @@ const Auth = () => {
   };
 
   return (
-    <div>
-      <AuthForm />
-      <div>
-        <button onClick={onSocialClick} name="Google">
-          Continue with Google
-        </button>
-        <button onClick={onSocialClick} name="Github">
-          Continue with Github
-        </button>
+    <>
+      <div className="auth ">
+        <header>
+          <h1 className="logo">Netwitter</h1>
+        </header>
+        <AuthForm />
+        <div className="auth__social">
+          <button className="button" onClick={onSocialClick} name="Google">
+            Continue with Google
+          </button>
+          <button className="button" onClick={onSocialClick} name="Github">
+            Continue with Github
+          </button>
+        </div>
       </div>
-    </div>
+      <footer>&copy; {new Date().getFullYear()} Notwitter</footer>
+    </>
   );
 };
 
